@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Records</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Submitted Tasks</h1>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Student</th>
+<th>Title</th>
+<th>Status</th>
+</tr>
+
+{% for task in tasks %}
+
+<tr>
+<td>{{ task[0] }}</td>
+<td>{{ task[1] }}</td>
+<td>{{ task[2] }}</td>
+<td>{{ task[4] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

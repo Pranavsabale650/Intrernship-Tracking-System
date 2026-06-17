@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mentor Login</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Mentor Login</h1>
+
+<form action="/dashboard">
+
+<input type="text"
+placeholder="Mentor Username"
+required>
+
+<input type="password"
+placeholder="Password"
+required>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
